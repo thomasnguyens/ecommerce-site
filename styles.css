@@ -8,9 +8,29 @@
 
 aside{
     margin-top:40px;
-    float: right;
-    width: 25%;
+    float: center;
     text-align: center;
+}
+
+.modal-title{
+    color: black;
+}
+
+
+
+aside button{
+    background-color: rgb(21, 221, 224);
+}
+
+/* sets image opacity to 50% */
+.opacity img{ 
+    opacity:0.5;
+
+}
+
+/* sets image opacity to 100 when hovered */
+.opacity:hover img{
+    opacity: 1;
 }
 
 .page-color{/*changing background color */
@@ -18,11 +38,21 @@ aside{
     color: white;
 }
 
+.img-resize{
+    width: 100%;
+    height: 80%;
+}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    
+}
+
+/* title of each product */
+figure > h5{
+    text-align: center;
 }
 
 .center-form{
@@ -31,18 +61,19 @@ aside{
     align-items: center;
 
 }
+.form-text{
+    color:black;
 
-.form-box{
+}
+
+.input{
+    
+}
+
+.contact-form{
     background-color:rgb(115, 166, 185);
     padding: 20px;
     border-radius: 5px;
     max-width: 100%;
 }
 
-
-aside button{
-    background-color: navajowhite;
-}
-aside a{
-    text-decoration: none;
-}

@@ -23,7 +23,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0" style="--bs-navbar-active-color:#167ed2; --bs-navbar-hover-color: #167ed2;"> <!-- dont know how to fix colors-->
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0" style="--bs-navbar-color:white;--bs-navbar-active-color:#167ed2; --bs-navbar-hover-color: #167ed2;"> <!-- dont know how to fix colors-->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current= "page" href="./index.html">Home</a>
                     </li>
@@ -39,21 +39,73 @@
                 </ul>
             </div>
         </div>
-        <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-            <span class="fa fa-sign-in"></span> Login</a>
-        </span>
+        
+
+        <!-- Modal-->
+        <div class="modal fade" id="loginModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <span class="navbar-text"></span>
+        <button type = "button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="fa fa-sign-in"></span>Login</button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container-fluid modal-body">
+                    <form> <!-- so it retreives data-->
+                        <div class="row">
+                        <div class="col-md-2">
+                        <label class="form-text fs-5" for = "name" > Username: </label> <input id = "name" type = "text" onmouse = "alert('required!')" required/><br>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-2">
+                        <label class="form-text fs-5" for = "pass"> Password: </label> <input id = "pass" type = "password" required/>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="justify-content: center;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </nav>
 </header>
 <body class="background" style = "background-color: rgb(115, 166, 185);"> <!-- setting entire background color-->
-    <div class="container">
         <aside>
-            <p style="color: white;"> Welcome!<br> To General Electrics!!</p>
-            <button><a href ="./about.html">Come In!!!!!!!!</a></button>
+            <p class="display-5"style="color: white;"> Welcome to my<br> General Electronics Store!</p>
+            <a class="navbar-brand opacity" href="./about.html">
+                <img src ="./images/ge-logo.png" alt="logo" width="100"><br>
+            </a>
         </aside>
     </div>
 
-    <!-- use for login/modal -->
+    
     
 </body>
 </html>
