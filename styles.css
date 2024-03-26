@@ -1,0 +1,41 @@
+.background{ /* responsive background */
+    background-image: url(./images/tech-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+aside{
+    margin-top:40px;
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+
+.page-color{/*changing background color */
+    background-color: #052f45f5;
+    color: white;
+}
+
+.center-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-box{
+    background-color:rgb(115, 166, 185);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+aside button{
+    background-color: navajowhite;
+}
+aside a{
+    text-decoration: none;
+}
