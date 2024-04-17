@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href = "styles.css" rel="stylesheet">
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <nav class = "navbar navbar-white navbar-expand-md bg-white justify-content-start">
+        <!-- customizes toggle bar hamburger menu, so it goes all the way right-->
+        <div class="container-fluid">
+            <!-- adding the logo -->
+            <a class="navbar-brand" href="./index.html">
+                <!-- <img src ="./images/ge-logo.png" alt="logo" width="40"> --> 
+                <h1 style="color:#26db90;"> innisfree</h1>
+            </a>
+            <!--adding a togglebar!(for a responsive navbar)-->
+            <button class="navbar-toggler" type ="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- style="--bs-navbar-color:white;--bs-navbar-active-color:#167ed2; --bs-navbar-hover-color: #167ed2;"> dont know how to fix colors -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav me-auto mb-2 mb-md-0" >
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about2.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products2.html">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact2.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Button trigger modal -->
+        <span class="navbar-text"></span>
+
+        <!-- can change the btn color here-->
+        <button type = "button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="fa fa-sign-in"></span>Login</button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="container-fluid modal-body">
+                    <form> <!-- so it retreives data-->
+                        <div class="row">
+                        <div class="col-md-2">
+                        <label class="form-text fs-5" for = "name" > Username: </label> <input id = "name" type = "text" onmouse = "alert('required!')" required/><br>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-2">
+                        <label class="form-text fs-5" for = "pass"> Password: </label> <input id = "pass" type = "password" required/>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- home title fonting-->
+<body class="background bg-color"> <!-- setting entire background color-->
+    <div class="container justify-content-end text-end">
+        <p class="display-5" style="color: white;"> Welcome to <br> Innisfree <br> Skincare.</p>
+    </div>
+    <a class="btn btn-primary" href="./about2.html" role="button">
+        [add logo] Come In
+    </a>
+</body>
+</html>
