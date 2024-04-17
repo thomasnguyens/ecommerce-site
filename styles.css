@@ -35,35 +35,17 @@ aside button{
 }
 
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* title of each product */
 figure > h5{
     text-align: center;
 }
 
-.center-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .form-text{
     color:black;
 }
 
 
-.contact-form{
-    background-color:rgb(115, 166, 185);
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 100%;
-}
 
 
 /* all these are for products page */
